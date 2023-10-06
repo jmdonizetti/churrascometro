@@ -52,10 +52,10 @@ buttonTema.addEventListener('click', () => {
 
     //Definindo a condição para quando acontecer o clique 
     if (temaAtual === 'inicial') {
-        newTema.style.backgroundImage = "url(../picture/pexels-samer-daboul-1375902.jpg)";
+        newTema.style.backgroundImage = "url(./javaScript/pexels-samer-daboul-1375902.jpg)";
         temaAtual = 'novo';
       } else {
-        newTema.style.backgroundImage = "url(../picture/pexels-los-muertos-crew-8477301.jpg)";
+        newTema.style.backgroundImage = "url(./javaScript/pexels-los-muertos-crew-8477301.jpg)";
         temaAtual = 'inicial';
       }
-})
+});
