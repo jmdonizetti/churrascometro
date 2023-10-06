@@ -2,14 +2,8 @@ const body = document.querySelector('body');
 
 const style = document.createElement('style');
 style.textContent = `body {
-    font-family: fantasy;
     background-image: 
-    url(../picture/perfeito.jpg); 
-
-    background-repeat: no-repeat;
-    max-width: 40vw;
-    height: 132vh;
-    margin: 0 auto; 
+    url(/picture/perfeito.jpg);  
 }`
 
 document.head.appendChild(style);
