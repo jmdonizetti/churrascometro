@@ -39,6 +39,9 @@ adicionarClick(numberLeft2, numberRight2, input2);
 adicionarClick(numberLeft3, numberRight3, input3);
 adicionarClick(numberLeft4, numberRight4, inputAlcool);
 
+//buttonTema
+
+
 
 
 
