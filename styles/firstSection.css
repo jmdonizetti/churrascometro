@@ -1,0 +1,296 @@
+.card-container {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.63);
+  overflow: hidden;
+
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .front-content{
+  font-size: 32px;
+  opacity: 1;
+  background: linear-gradient(-45deg, #e0a35c 0%, #ee9a3a 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  
+}
+.card .content {
+  text-shadow: #000000 0.1em 0.1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #d65e3dcb 0%, #fcc88dc2 100% );
+  color: #FED5A7;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateX(-96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+/* animation quantas pessoas vão no churrasco*/
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.animation {
+  text-align: center;
+  font: bold 100% Consolas, Monaco, monospace;
+  border-right: 0 solid black;
+  width: 80ch;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 3s steps(33, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+/* button theme */
+button {
+  margin-top: 0.4em;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: 900;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #1e1e1e;
+  color: white;
+  box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+}
+
+button:hover {
+  color: #ee9a3a;
+  animation: a 0.5s 1 linear;
+}
+
+@keyframes a {
+  0% {
+    transform: scale(0.7, 1.3);
+  }
+
+  25% {
+    transform: scale(1.3, 0.7);
+  }
+
+  50% {
+    transform: scale(0.7, 1.3);
+  }
+
+  75% {
+    transform: scale(1.3, 0.7);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/*  */
+
+h2{
+  text-shadow: #000000b4 0.1em 0.1em;
+  font-family: fantasy;
+  font-weight: 100;
+  color: #EA9C42;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
+
+  font-size: 1.9em;
+}
+
+.people-option,ul,li{
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li{
+  margin-left: 130px;
+}
+
+.people-option{
+  margin-top: 0;
+  margin-bottom: -1em;
+  color: #EA9C42;
+  text-shadow: #0e0d0d 0.1em 0.1em;
+  font-size: 1.3em;
+}
+
+.man{
+  margin-left: -3.7em;
+}
+
+.woman{
+  margin-left: 3.2em;
+}
+
+.child{
+  margin-left: 2.8em;
+}
+
+.input{
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.301);
+  border-radius: 20px;
+  text-shadow: #00000086 0.1em 0.1em;
+  color: rgb(255, 255, 255);
+
+  width: 3em;
+  height: 3em;
+
+  font-size: 1.875em;
+  text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  
+}
+
+.number-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .number-left{
+    border: 1px solid #fed5a72c;
+    margin-left: 3em;
+  }
+  .number-right{
+    border: 1px solid #fed5a72c;
+    margin-right: 3em;
+  }
+
+  .number-left::before,
+  .number-right::after {
+    content: attr(data-content);
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 20px;
+    color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .number-left::before {
+    content: "-";
+  }
+  
+  .number-right::after {
+    content: "+";
+  }
+  
+  .number-quantity {
+    padding: 0.25rem;
+    border: 0;
+    width: 50px;
+    -moz-appearance: textfield;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  .number-left:hover::before,
+  .number-right:hover::after {
+    background-color: #666666;
+  }
+  
+/* zzzzzzzzzzzzzzzzzz */
+
+.alcool{
+  margin-top: 2em;
+}
+
+.number-control-2 {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.number-left-2{
+  border: 1px solid #fed5a72c;
+  margin-left: 19.2em;
+}
+.number-right-2{
+  border: 1px solid #fed5a72c;
+  margin-right: 19.2em;
+}
+
+.number-left-2::before,
+.number-right-2::after {
+  content: attr(data-content);
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 20px;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.number-left-2::before {
+  content: "-";
+}
+
+.number-right-2::after {
+  content: "+";
+}

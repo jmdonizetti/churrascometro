@@ -1,0 +1,10 @@
+body{
+    font-family: fantasy;
+    background-image: 
+    url(../perfeito.jpg); 
+
+    background-repeat: no-repeat;
+    max-width: 40vw;
+    height: 132vh;
+    margin: 0 auto;
+}
