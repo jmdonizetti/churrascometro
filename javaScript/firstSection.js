@@ -7,6 +7,7 @@ firstSection.classList.add('first-section');
 const divTema = document.createElement('div');
 
 const buttonTema = document.createElement('button');
+buttonTema.setAttribute('id', 'buttonTema');
 buttonTema.innerText = 'tema';
 
 const animation = document.createElement('div');
