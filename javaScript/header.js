@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 const style = document.createElement('style');
 style.textContent = `body {
     background-image: 
-    url(../pexels-samer-daboul-1375902.jpg);  
+    url(../picture/pexels-los-muertos-crew-8477301.jpg);  
 }`
 
 document.head.appendChild(style);
