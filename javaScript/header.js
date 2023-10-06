@@ -29,7 +29,7 @@ content.classList.add('content');
 
 const heading = document.createElement('p');
 heading.classList.add('heading');
-heading.innerText = 'COMER É BOM DE MAIS!';
+heading.innerText = 'COMER É BOM DE MAIS! ';
 
 
 header.appendChild(cardContainer);
