@@ -2,7 +2,8 @@ const body = document.querySelector('body');
 
 const style = document.createElement('style');
 style.textContent = `body {
-    background-image: url(../picture/perfeito.jpg);
+    background-image: 
+    url(../picture/perfeito.jpg); 
 }`
 
 document.head.appendChild(style);
