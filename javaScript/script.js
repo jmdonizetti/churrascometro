@@ -39,25 +39,19 @@ adicionarClick(numberLeft2, numberRight2, input2);
 adicionarClick(numberLeft3, numberRight3, input3);
 adicionarClick(numberLeft4, numberRight4, inputAlcool);
 
+//buttonTema
 
-
-//BUTTONTEMA
-
-//definindo um estado de começo 
-let temaAtual = 'inicial';
+let estado = 'inicial';
 
 buttonTema.addEventListener('click', () => {
-    //pegando a tag ou seletor que adicionei a imagem de fundo no css 
     const newTema = document.querySelector('body');
 
-    newTema.style.backgroundImage = "url(./javaScript/pexels-samer-daboul-1375902.jpg)";
+    if(estado === 'inicial'){
+        newTema.style.backgroundImage = "url(../picture/pexels-los-muertos-crew-8477301.jpg)";
+        estado = 'novo';
+    }else {
+        newTema.style.backgroundImage = "url(../picture/pexels-samer-daboul-1375902.jpg)";
+        estado = 'inicial';
+    }
 
-    //Definindo a condição para quando acontecer o clique 
-    if (temaAtual === 'inicial') {
-        newTema.style.backgroundImage = "url(./javaScript/pexels-samer-daboul-1375902.jpg)";
-        temaAtual = 'novo';
-      } else {
-        newTema.style.backgroundImage = "url(./javaScript/pexels-los-muertos-crew-8477301.jpg)";
-        temaAtual = 'inicial';
-      }
 });
