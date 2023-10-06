@@ -50,6 +50,8 @@ buttonTema.addEventListener('click', () => {
     //pegando a tag ou seletor que adicionei a imagem de fundo no css 
     const newTema = document.querySelector('body');
 
+    newTema.style.backgroundImage = "url(./javaScript/pexels-samer-daboul-1375902.jpg)";
+
     //Definindo a condição para quando acontecer o clique 
     if (temaAtual === 'inicial') {
         newTema.style.backgroundImage = "url(./javaScript/pexels-samer-daboul-1375902.jpg)";
