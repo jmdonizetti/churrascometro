@@ -53,5 +53,4 @@ buttonTema.addEventListener('click', () => {
         newTema.style.backgroundImage = "url(../picture/pexels-samer-daboul-1375902.jpg)";
         estado = 'inicial';
     }
-
 });
