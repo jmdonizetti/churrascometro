@@ -47,10 +47,10 @@ buttonTema.addEventListener('click', () => {
     const newTema = document.querySelector('body');
 
     if(estado === 'inicial'){
-        newTema.style.backgroundImage = "url(/javaScript/pexels-los-muertos-crew-8477301.jpg)";
+        newTema.style.backgroundImage = "url(javaScript/pexels-los-muertos-crew-8477301.jpg)";
         estado = 'novo';
     }else {
-        newTema.style.backgroundImage = "url(/javaScript/pexels-samer-daboul-1375902.jpg)";
+        newTema.style.backgroundImage = "url(javaScript/pexels-samer-daboul-1375902.jpg)";
         estado = 'inicial';
     }
 });
