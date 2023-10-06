@@ -2,7 +2,6 @@ const body = document.querySelector('body');
 
 const style = document.createElement('style');
 style.textContent = `body {
-    background-image: url(./javaScript/pexels-samer-daboul-1375902.jpg);
 }`
 
 document.head.appendChild(style);
